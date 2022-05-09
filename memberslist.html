@@ -1,0 +1,41 @@
+
+<body style="background-color: bisque;"></body>
+<div align ="center"
+	<h1>All Members List</h1>
+
+<table border="1px" cellspacing="10" style="background-color: rgb(234, 203, 203)>
+	<tr style="background-color: rgb(213, 244, 33);">
+		<th>name</th>
+		<th>your_plan</th>
+		<th>contact_Number</th>
+		<th>aadharcard_number</th>
+		<th>membership</th>
+	</tr>
+	{% for tup in elist %}
+		<tr>
+			<td>{{tup[0]}}</td>
+			<td>{{tup[1]}}</td>
+			<td>{{tup[2]}}</td>
+			<td>{{tup[3]}}</td>
+			<td>{{tup[4]}}</td>
+            <td>
+				<a class="btn btn-outline-dark btn-sm " href="/delete?name={{tup[0]}}">Delete</button></a>
+                <a class="btn btn-outline-dark btn-sm " href="/edit?name={{tup[0]}}">Update</button></a></td>
+                </tr>
+			
+		</tr>
+	{% endfor %}
+</table>
+
+<h1><a href="/">Home</a></h1>
+</div>
+</body>
+       
+       
+       
+       
+       
+       
+       
+       
+    

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Update members</title>
+  </head>
+  <body>
+    
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about">Home</a>
+            </li>
+            
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="members">Add Task</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="memberslist">Task List</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Logout</a>
+              </li>
+              
+    
+  
+    <br>
+    <form action="updatemembers" method="POST">
+        <div align="center">
+        <h2>Update members </h2>
+        </div>
+        <tr>
+					<td>name</td>
+					<td><input type="text" name="name" value="{{row[0]}}" placeholder="name" required></td>
+				</tr>
+
+        <tr>
+					<td>your_plan</td>
+					<td><input type="text" name="your_plan" value="{{row[1]}}" placeholder="your_plan" required></td>
+				</tr>
+        <tr>
+					<td>contact</td>
+					<td><input type="text" name="contact" value="{{row[2]}}" placeholder="contact" required></td>
+				</tr>
+        <tr>
+					<td>aadharcard_number</td>
+					<td><input type="text" name="aadharcard_number" value="{{row[3]}}" placeholder="aadharcard_number" required></td>
+				</tr>
+        <tr>
+					<td>age</td>
+					<td><input type="text" name="age" value="{{row[4]}}" placeholder="age"required></td>
+				</tr>
+        <tr>
+					<td>membership</td>
+					<td><input type="text" name="membership" value="{{row[5]}}" placeholder="membership" required></td>
+				</tr>
+       
+            
+            <br>
+            <div class="container">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
